@@ -45,6 +45,9 @@
 //     this.className += " active";
 //   });
 // }
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+  });
 
 function searchFunction() {
     // Declare variables
