@@ -16,19 +16,27 @@ button, input {
     font-size: 36px;
 }
 
+#searchItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .container {
     overflow: hidden;
 }
   
 .filterDiv {
-    float: left;
-    background-color: #2196F3;
-    color: #ffffff;
-    width: 100px;
+    /* float: left; */
+    /* background-color: #2196F3; */
+    color: #323437;
+    width: fit-content;
     line-height: 100px;
     text-align: center;
     margin: 2px;
+    padding: 5px;
     display: none; /* Hidden by default */
+    position: relative;
 }
   
 /* The "show" class is added to the filtered elements */
@@ -39,6 +47,7 @@ display: block;
 /* Style the buttons */
 .btn {
 border: none;
+border-radius: 16px;
 outline: none;
 padding: 12px 16px;
 background-color: #f1f1f1;
@@ -54,6 +63,18 @@ background-color: #ddd;
 .btn.active {
 background-color: #666;
 color: white;
+}
+
+img {
+    width: 15vw;
+}
+
+.filterDiv:hover {
+    background-color: #32343722;
+}
+
+a {
+    display: none;
 }
 
 /* search bar */
