@@ -36,7 +36,7 @@ button, input {
     margin: 2px;
     padding: 5px;
     /* Hidden by default */
-    /* display: none;  */
+    display: none; 
     position: relative;
 }
   
@@ -83,7 +83,8 @@ a {
     margin-top: 3em;
     border-radius: 16px;
     border: none;
-
+    width: 90vw;
+    text-align: center;
 }
 
 #searchInput:focus {
