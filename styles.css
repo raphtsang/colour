@@ -20,7 +20,35 @@ button, input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow: visible;
+    /* flex-direction: row; */
 }
+
+/* .imgSet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: visible; 
+    flex-direction: row;
+} */
+
+/* .imgSet::before {
+    font-size: 50px;
+    position: fixed;
+}
+
+#Work.imgSet::before {
+    content: "WORK";
+}
+
+#Class.imgSet::before {
+    content: "CLASS";
+}
+
+#Weekend.imgSet::before {
+    content: "WEEKEND";
+} */
+
 
 .container {
     overflow: hidden;
@@ -31,13 +59,16 @@ button, input {
     /* background-color: #2196F3; */
     color: #323437;
     width: fit-content;
-    line-height: 100px;
+    line-height: 20px;
     text-align: center;
     margin: 2px;
     padding: 5px;
     /* Hidden by default */
     /* display: none;  */
     position: relative;
+    /* display: block;
+    overflow: auto; */
+    transition: ease-in-out 0.3s;
 }
   
 /* The "show" class is added to the filtered elements */
@@ -68,10 +99,13 @@ color: white;
 
 img {
     width: 7vw;
+    min-height: 26.5vh;
+    position: relative;
 }
 
 .filterDiv:hover {
     background-color: #32343722;
+    transform: scale(1.2);
 }
 
 a {
@@ -80,7 +114,7 @@ a {
 
 /* search bar */
 #searchInput {
-    margin-top: 3em;
+    margin-top: 20px;
     border-radius: 16px;
     border: none;
     width: 90vw;
@@ -91,3 +125,41 @@ a {
     border: none;
     outline-color: #00000000;
 }
+
+@media screen and (max-width: 1661px) {
+    img {
+        width: 5.5vw;
+        min-height: 23.5vh;
+    }
+}
+
+@media screen and (max-width: 1251px) {
+    img {
+        min-width: 15vw;
+        min-height: 26.5vh;
+    }
+
+    #searchItems .imgSet::before {
+        content: "";
+    }
+}
+
+@media (orientation: portrait) {
+    img {
+        min-width: 26.5vw;
+        max-height: 75vh;
+    }
+
+    #searchItems .imgSet::before {
+        content: "";
+    }
+
+}
+
+/* @media screen and (min-height: 1245px) {
+    img {
+        min-width: 15vw;
+        min-height: 18.5vh;
+    }
+} */
+

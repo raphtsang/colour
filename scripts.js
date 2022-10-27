@@ -56,7 +56,7 @@ function searchFunction() {
     filter = input.value.toUpperCase();
     searchItems = document.getElementById("searchItems");
     searchDiv = searchItems.getElementsByTagName('div');
-  
+
     // Loop through all list items, and hide those who don't match the search query
     for (i = 0; i < searchDiv.length; i++) {
     //   imgTag = searchDiv[i].getElementsByTagName("img");
@@ -77,3 +77,55 @@ function searchFunction() {
         }
     }
   }
+
+  var imageEls = document.getElementsByTagName("img");
+  //Iterating
+  for(var i=0;i<imageEls.length;i++){
+     imageEls[i].title=imageEls[i].alt;
+  }
+
+  // imgBlock = document.querySelectorAll(".filterDiv")
+
+  // imgBlock.forEach(item => { 
+  //   item.addEventListener('click', () => {
+  //     item.style.transform = "scale(2.5)";
+  //     item.style.zIndex = "999";
+  //     item.style.position = "absolute";
+  //     item.style.top = "400px";
+  //     item.style.left = "870px";
+  //     console.log("working")
+  //     setTimeout(function(){
+
+  //       item.style.transform = "scale(1)";
+  //       item.style.position = "relative";
+
+  //     },5000); 
+  //     console.log("working")
+
+  //   })
+    
+  // });
+
+
+  // const labelToggle = document.getElementById("setLabel");
+  // var imgSets = document.querySelectorAll(".imgSet");
+  // let imgSetWork = document.getElementById("Work");
+  
+  // const workWord = "HELLOW"
+
+  // labelToggle.addEventListener('change', () => {
+  //   // imgSetWork.style.setProperty('content', workWord);
+  //   let workBefore = window.getComputedStyle(imgSetWork,"::before");
+  //   workBefore.style.content('--imgSetWork', workWord)
+  //   console.log("it worked")
+  // });
+
+  // // labbleToggle.addEventListener('change', () => {
+  // //   if (labelToggle.checked) {
+  // //     imgSets.forEach(item => {
+  // //       let imgSet = window.getComputedStyle(imgSets, "::before");
+  // //       imgSet.style.content("");
+  // //     }
+  // //   }
+  // //   }
+  // // )
