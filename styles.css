@@ -10,10 +10,10 @@ body {
     font-weight: 300;
 }
 
-button, input {
+input {
     font-family: "Inter", sans-serif;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 2.1em;
 }
 
 #searchItems {
@@ -23,32 +23,6 @@ button, input {
     overflow: visible;
     /* flex-direction: row; */
 }
-
-/* .imgSet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: visible; 
-    flex-direction: row;
-} */
-
-/* .imgSet::before {
-    font-size: 50px;
-    position: fixed;
-}
-
-#Work.imgSet::before {
-    content: "WORK";
-}
-
-#Class.imgSet::before {
-    content: "CLASS";
-}
-
-#Weekend.imgSet::before {
-    content: "WEEKEND";
-} */
-
 
 .container {
     overflow: hidden;
@@ -126,13 +100,6 @@ a {
     outline-color: #00000000;
 }
 
-@media screen and (max-width: 1661px) {
-    img {
-        width: 5.5vw;
-        min-height: 23.5vh;
-    }
-}
-
 @media screen and (max-width: 1251px) {
     img {
         min-width: 15vw;
@@ -155,11 +122,4 @@ a {
     }
 
 }
-
-/* @media screen and (min-height: 1245px) {
-    img {
-        min-width: 15vw;
-        min-height: 18.5vh;
-    }
-} */
 
