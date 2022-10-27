@@ -8,12 +8,16 @@ body {
     gap: 1em;
     font-family: "Inter", sans-serif;
     font-weight: 300;
+    color: #fafafa;
+    background-color: #2e2e2e;
 }
 
 input {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 2.1em;
+    color: #eaeaea;
+    outline: none;
 }
 
 #searchItems {
@@ -50,27 +54,6 @@ input {
 display: block;
 }
   
-/* Style the buttons */
-.btn {
-border: none;
-border-radius: 16px;
-outline: none;
-padding: 12px 16px;
-background-color: #f1f1f1;
-cursor: pointer;
-}
-
-/* Add a light grey background on mouse-over */
-.btn:hover {
-background-color: #ddd;
-}
-
-/* Add a dark background to the active button */
-.btn.active {
-background-color: #666;
-color: white;
-}
-
 img {
     width: 7vw;
     min-height: 26.5vh;
@@ -78,8 +61,12 @@ img {
 }
 
 .filterDiv:hover {
-    background-color: #32343722;
+    background-color: #fafafa;
     transform: scale(1.2);
+    z-index: 99;
+    border-radius: 4px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.3);
+    
 }
 
 a {
@@ -93,12 +80,20 @@ a {
     border: none;
     width: 90vw;
     text-align: center;
+    background-color: #2e2e2e;
+    outline: none;
+    transition: all ease-in-out 0.2s;
 }
 
-#searchInput:focus {
-    border: none;
-    outline-color: #00000000;
+#searchInput:hover {
+    background-color: #4d4d4d;
 }
+
+
+#searchInput:focus {
+    background-color: #3d3d3d;
+}
+
 
 @media screen and (max-width: 1251px) {
     img {
